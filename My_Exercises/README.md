@@ -11,6 +11,7 @@ Bioinformatics for Evolutionary Biology
 
 - Jan 21 - exercises in taking cleaned fastq files and transforming them into sam and then bam files, i.e. aligning them to a reference. We used data simulated by Sariel with various sets of error rates and quality scores.
 	- samtools, bwa,bowtie2
+	-access the data: gunzip then tar -xvf (or some combo of those 3 flags...)
 
 - Jan 22
 
