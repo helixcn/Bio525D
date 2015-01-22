@@ -1,0 +1,322 @@
+1/19/15
+
+Overview of sequencing data
+	old:
+	Maxam-Gilbert sequencing
+	Sanger sequencing - dominated for 30 years, but doesn't really scale up to do more than 1 sequence at a time
+	
+	2nd generation sequencing:
+	Illumina hi-seq
+	IonTorrent (smaller scale than illumina) - an improved version of 454 data
+		do many fragments in parallel!
+		increases throughput
+	
+	2nd gen method: 	fragment DNA
+						ligate adapters of known sequence
+						bind (in illumina) to a glass flow cell - create clusters
+						add nucleotides
+						they stick
+						wash it
+						take a picture and then see what base pair was added
+						cleave it off
+						repeat add/wash/picture
+						
+	sequencing types:
+		whole genome sequencing
+			does the ENTIRE genome
+			involved, especially for bigger genomes
+			lots of processes to get the data
+		sequence capture
+			attach complementary RNA or DNA strands to beads
+			fish out the desired sequences with magnet
+			create sequencing library from enriched DNA
+			reduces cost and analysis time
+		RNAseq
+			extract DNA and convert to cDNA
+			permits the analysis of expression and sequence variation in expressed genes (at the same time)
+		RadSeq/GBS (genotyping by sequencing)
+			reduce genome complexity with REs
+			sequence highly multiplexed libraries of restriction fragments
+			simultaneous marker discovery and genotyping
+				i.e. lets you discover markers at the same time as analyzing them
+				but can have higher error rates
+		Amplicon sequencing
+			use PCR to amplify target DNA
+			sequence amplified DNA (Amplicon)
+			
+	Disadvantages of 2nd gen sequencing
+		DNA must be amplified to create libraries
+			even the best enzymes have error, so that is introduced here
+		some fragments inevitably amplify better than others
+			overrepresentation and underrepresentation happens
+		so it'd be better if we didn't have to do any DNA amplification
+		
+		de novo assembly is difficult because of things like repeats
+			hard to assemble because our fragments are too short to span long sections of repeats and know how things align
+		short reads can miss structural variants in the genome, e.g. inversion or translocation
+			can try to fix this with higher levels of read depth
+			and need to not have repeated sequences around the break point
+		short reads also make it hard to detect small insertions and deletions
+		and short reads are challenging to align
+		
+	SO we need longer reads
+	
+	3rd gen sequencing is supposed to fix read length and the amplification problem
+		sample prep less complicated
+			no amplification, sequence DNA directly
+		but need very high quality DNA
+		
+		2 types:
+		sequencing by synthesis
+			PacBio 
+			attach polymerase directly and WATCH IN REAL TIME as DNA is sequenced
+			detects fluorescence of base at polymerase
+		direct sequencing by passing DNA through a nanopore (membrane-bound)  (oxford nanopore)
+			ion flow changes at the pore each time a base passes through
+			further behind than PacBio but could be easier and cheaper
+		
+		these both can have high error rates though  (10-25%)
+		but can get MUCH longer reads!! fewer contigs are longer and easier to assemble
+		still more expensive though
+		
+		
+1/20/15
+
+FastQ files and quality checking and trimming
+	FastA sequence and quality scores stored in separate files (.fasta or .fa and .qual)
+	now mainly used for storing reference sequences as either nucleotides or peptides
+	2 lines per sequence read	
+		quality means confidence in that sequence score
+		sometimes the data is split into multiple lines, sometimes not
+		always begins with an ">"
+	
+	FastQ sequence and quality scores stored in the same file (usually .fq or .fastq)
+	most common format for short read data returned from the sequencer
+	4 lines per sequence read
+		always begins with an "@"
+		line 1 is header, containing sequence identifier (sequencer, lane, location, info, etc)
+		second line is sequence
+		3rd line is spacer
+		4th line is quality score
+	
+	historically 2 formats for quality scores
+		sanger:
+			quality (Q) = -10 times log 10 of p where p is the probability that given base call is incorrect
+			e.g. Q30 means a 0.1% chance that the base call is incorrect
+			Q20 is 1% chance incorrect, and Q10 is 10% chance incorrect
+			quality score increases as you have low probabilities of being incorrect
+		solexa:
+			the other type uses same thing but times p/(1-p)
+		these two values differ more the more incorrect you get (in terms of base pair probability of being wrong)
+		
+		it is possible to recalibrate quality scores to be really sure about how good the reads are, but won't go into that too much in this class
+	
+	Q scores are encoded by different characters (ASCII characters)
+	now everyone uses the illumina 1.8 encoding, which uses the same quality score coding system as the original Sanger coding
+	
+	Preparing FASTQ files for analysis
+		check files for completeness, use md5 checksums if file corruption is suspect
+		inspect quality statistics
+		many other possible steps to clean files, and the choice of steps depends on the application
+			de-multiplexing
+			trimming adapters
+			filtering low quality base calls
+			removing contaminant sequences
+			removing duplicate sequences
+			removing sequences that are mainly adapter
+		there are many programs to implement these steps
+		the first 2 are usu done by the sequencing center
+		the first 3 are usually for genotyping and RNAseq
+		all of them are usually done for reference assembly
+		
+	inspecting quality statistics
+		number and length of sequences
+		base qualities
+		polyA/T tails
+		sequence complexity
+		presence of tag sequences (stuff you added during preparation)
+		
+		Recommended tools:
+			prinseq
+			fastqc
+	
+	one way to look at things is to look at the distribution of base frequencies across the sequence read
+	
+	quality is usu low in the beginning of the read, increases and then drops off even more as you go further along
+		can tail off much more quickly if the sequencer didn't work well
+	
+	multiplexing is when several libraries are barcoded and sequenced on the same lane (of illumina)
+		most sequencing centers will de-multiplex the data prior to returning it
+		otherwise, CASAVA can be used for de-multiplexing and trimming the barcodes
+	
+	trimming adapters
+		adapters are short sequences that are added to the beginning and the end of DNA molecules to prepare them for sequencing
+		failure to remove them will compromise how well the reads align to a reference
+		adapters can be detected during quality control phase and then removed by a range of tools
+		most sequencing centers will already remove these
+		Tools: fastx toolkit, trimmomatic, prinseq
+	
+	filtering low quality base calls
+		choice of quality score to filter depends on the application
+			too low quality score cutoff and bad sequence data wil be included
+				may not be a problem for alignment and genotype calling, but it can slow things down
+				more of a problem for assembly
+			too high a quality score cutoff will results in loss of useful data
+			usually Q10-Q20 is used, but sometimes higher or lower
+			recommended tools: fastxtoolkit, trimmomatic, prinseq
+	
+	additional filtering steps can be done for assembly
+		remove sequences consisting of adapter dimers (otherwise they may be included as contigs) - use TAGDUST
+		clean out contaminants by blasting to known databases (can also be conducted post-assembly)
+		remove duplicate sequences - if you are doing a de novo assembly, sequences that are exact copies will slow down the assembly without adding anything ( remove using FASTX_COLLAPSER)
+		
+		SnoWhite is a good pipeline for aggressive cleaning and filtering prior to assembly
+		
+	Re-pairing reads after filtering
+		with paired-end reads if one read direction is removed but the other is not, then the _R1 and _R2 files are mismatched
+		need to run a script to eliminate unpaired reads from each _R1 and _R2 file
+		some programs output reads in paired and unpaired files (e.g. prinseq, Trimmomatic) others do not and custom scripts are required to re-pair data
+		
+	GBS-specific filtering
+		GBS/RAD use enzymes to cleave the DNA, so all reads will begin with the recognition sequence
+		cut the first X-bases from each sequence (all filtering programs)
+		may need to clean GBS-specific adapters or other home-brew sequences that sequencing centers didn't remove
+		
+	RESOURCES: Del Fabbro et al 2013, an extensive evaluation of read trimming effects on illumina NGS data analysis. PLoS One 8:e85024
+	prinseq.sourceforge.net/manual.html#STANDALONE and /Data_preprocessing.pdf
+	
+EXERCISES
+	for GBS files, same number of sequences, diff. number of bases, diff mean length of input
+		all bases are good quality - HOW DOES IT KNOW?
+		
+
+		
+1/21/15
+
+Alignment algorithms and tools
+	when we align sequences, we assume they are similar
+		protein sequence conservatio nand DNA sequence conservation are assumptions
+	
+	orthologous sequences differ because they are found in diff. species
+	paralogous sequences differ due to a gene duplication event
+	homoeologous sequences originated by polyploidization
+		sequences could be all 3 or a combination
+	
+	pairwise alignments compares 2 sequences at a time
+	multiple alignments compare more than 2 at a time and are more intensive
+	
+	pairwise: 2 challenges:
+		there are many possible alignments
+		large database/reference
+	*2 sequences can ALWAYS be aligned
+	*there is often more than one solution with the same score
+	
+	Methods:
+		by hand - slide sequences on 2 lines of a word processot
+		dot plot (with windows)
+		mathematical approach (relatively slow, but guarantees finding optimal solution
+		heuristic methods (fast, aproximate)
+			BLAST
+			short-read aligners
+		
+		need a scoring method for aligning, e.g 1 pt for a match, -1 for a mismatch, maybe -2 for a gap
+		
+		in a dot plot, each diagonal corresponds to a possible (ungapped) alignment -- x-axis is a sequence and y-axis is a sequence
+			can increase "word size" and stringency
+			or can set a score within a given window size
+		
+			smaller window means larger weight of statistical (unspecific) matches
+			large windows reduce the sensitivity for short sequences
+			insertions/deletions are not treated explicitly
+		
+		can use dynamic programming
+			take the alignment, break it down to subproblems, solve those locally, then track back over all the alignments to get the total solution and guarantees the optimal solution
+				global alignments start at the beginning
+				local alignment algorithms find the region or regions of highest similarity between 2 sequences
+				
+				global is slower
+				local is faster- starts at a "Seed" and extends from the site
+			
+			build an alignment path matrix
+			create
+			...
+			
+			scoring system
+				numerical value based on a symbol comparison table
+				gap penalties - either for opening a gap or for elongating a gap
+			
+			usu the best alignment has minimized the number of gaps and maximize the matches, but there is often a tradeoff
+				how to balance this?
+					steep penalty for a gap or else you end up with nonsense alignments
+					"affine" gap penalty give a big penalty for each new gap but a much smaller gap extension
+					multibase gaps are quite common
+			
+			however what to do with insertions??
+				well there is still a penalty, but can get a higher score if the gap creates more alignments downstream
+		
+		BLAST
+			very fast
+			primarily designed to identify homologous sequences
+			blast is a hashed seed-extend algorithm
+			...
+			...
+			
+		once it makes a match, it alignes from either end until it reaches an alignment score falling below 50%
+		
+	there are LOTS of aligners now
+	
+	aligning short sequences to a reference
+		don't use blast because it is slow b/c it searches for each 1
+		...
+		...
+		...
+		...		
+	
+	short read aligning is hard b/c they are so short- contain limited information
+		so harder to find a unique position on the reference genome
+	better approaches: spaced seeds OR burrows-wheeler
+		burrows wheeler does a compression that helps to speed things up
+	hashed seed
+		2 steps
+			identify a match
+			...
+		
+		with SNPs in a sequence, that is a mismatch and can make it fail to align
+		spaced seed approach helps this
+			more than 55% more sensitive than BLAST's default 70%
+		
+	burrows-wheeler
+		a family of methods uses a Trie strucure to search a reference sequence
+		trie is a data structure which stores the suffixes (i.e. ends of a sequence)
+		key advantage over hashed algorithms:
+			alignment of multiple copies of an identical sequence in reference only needs to be done once
+			use of an FM-index
+			...
+		
+		bowtie/soap vs bwa
+		bowtie and soap 2 cannot handle gapped alignments (bowtie 2 can)
+			so no indel detection
+		
+	a single read may align to many regions on the genome - makes a worse score
+		could be due to duplication or repetitive sequences
+	aligners let you choose how to deal with this, sometimes choose one of the places to align to randomly - level of randomness can be biased across aligners
+	
+	PCR duplicates can cause a problem, could bias SNP calls or introduce false SNPs
+	
+	SAM/BAM format
+		sequence alignment/map format
+			universal standard
+			human readable (SAM) and compact (BAM)
+		structure:
+			header - version, sort order, reference sequences, read groups, program...
+			alignment records
+		sam/bam flag - has inofrmation about how the alignment performed
+		
+		See:  https://broadinstitute.github.io/picard/explain-flags.html
+		
+		mapping quality is calculated similarly to the RAD/GBS sequencing lecture from previous days' notes
+			P = probability that this mapping is NOT the correct one
+			MapQ = Qs = -10log10(P)
+			calculating P is more complicated, see slide
+		CIGAR string format also gives information about the alignment
+		
