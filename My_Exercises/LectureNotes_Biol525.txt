@@ -319,4 +319,10 @@ Alignment algorithms and tools
 			MapQ = Qs = -10log10(P)
 			calculating P is more complicated, see slide
 		CIGAR string format also gives information about the alignment
-		
+	
+	
+	
+	
+1/22/15
+
+Assembly - transcriptome and genome assembly	
