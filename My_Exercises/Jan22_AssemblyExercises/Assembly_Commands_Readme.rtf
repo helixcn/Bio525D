@@ -12,8 +12,8 @@
 \f1\b0\fs28 \cf2 \cb3 velveth\
 velvetg\
 \
-velveth cpAssembly31 31 -shortPaired -fastq -separate cp_350PE_01Err.read1.fastq cp_350PE_01Err.read2.fastq \
-velvetg cpAssembly31\
+velveth cpAssembly31 31 -shortPaired -fastq -separate cp_350PE_01Err.read1.fastq cp_350PE_01Err.read2.fastq   ## builds a table of all the kmers of desired size - here using length 31, do on the 2 fastq files\
+velvetg cpAssembly31  ## previous step stored it all in cpassembly31, this step puts it all in that folder?\
 \
 velveth cpAssembly11 21 -shortPaired -fastq -separate cp_350PE_01Err.read1.fastq cp_350PE_01Err.read2.fastq \
 velvetg cpAssembly11\

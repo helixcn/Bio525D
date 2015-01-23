@@ -310,7 +310,7 @@ Alignment algorithms and tools
 		structure:
 			header - version, sort order, reference sequences, read groups, program...
 			alignment records
-		sam/bam flag - has inofrmation about how the alignment performed
+		sam/bam flag - has information about how the alignment performed
 		
 		See:  https://broadinstitute.github.io/picard/explain-flags.html
 		
@@ -325,4 +325,38 @@ Alignment algorithms and tools
 	
 1/22/15
 
-Assembly - transcriptome and genome assembly	
+Assembly - transcriptome and genome assembly - algorithms and tools
+
+	method to bring all the reads together to reconstruct the DNA
+	in sized order: reads -> contigs -> scaffold -> assembly
+	the assembly will have some gaps because it is made from the very small fragments
+	
+	size of the genome matters in terms of ability and strategies to assemble
+	
+	assembling a draft vs a complete genome
+		500 contigs covering most of a bacterial genome can be obtained quite quickly
+		to get 1 contig covering all genomic sequence could take much longer
+		usually that extra effort is not worth it, but people still sometimes want to do it
+		
+	how much coverage is needed? how many gaps will there be for a given number of reads and length of reads
+	
+	reference-guided assembly means using a reference genome
+	de novo assembly is from nothing, and has 2 ways:
+		overlap layout consensus (OLC)
+		de Bruijn Graph (DBG)
+	or a hybrid approach ......
+	
+	use graph theory to find the shortest or simplest way to assemble all the reads
+		given a set of strings, find the shortest string that contains all of them
+	
+	scaffolding is the task of ordering and orienting contigs by using additional information about their relative placement
+		mate-reads information, homology data, ..... is used to inform this
+	
+	mate-pair vs paired-end
+		paired end usu refers to libraries prepared for the illumina platform with insert sizes 50-500bp and forward-reverse orientation
+		mate-pair is a diff. library prep .......
+		
+	
+	
+	
+	
