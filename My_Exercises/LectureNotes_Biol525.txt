@@ -356,7 +356,103 @@ Assembly - transcriptome and genome assembly - algorithms and tools
 		paired end usu refers to libraries prepared for the illumina platform with insert sizes 50-500bp and forward-reverse orientation
 		mate-pair is a diff. library prep .......
 		
+1/23/15
+
+RNAseq and analysis of differential gene expression
+
+	why RNAseq?
+	3 main uses
+		assembling the gene space of a genome (a transcriptome)
+		genotyping individuals for variants that occur within the transcribed region of their genome
+		quantify patterns of gene expression across:
+			organ, tissue or cell types
+			timepoints and development
+			experimental treatments or observational categories
+		
+	how is RNAseq data generated?
+		mRNA is isolated, fragmented, and cDNA synthesized and sequenced
+		RNA's with poly-A tails are captured, this gets only the mature mRNAs
+		break into fragments
+		create cDNA library (copy of the RNA?)
+		amplify that cDNA
 	
+	want to do aggressive filtering prior to transcriptome assemblies - SnoWhite is good
+	when doing mapping/aligning, you can be less aggressive with filtering, but bad quality reads won't align
+	
+	mapping = placement of a read in the correct region of the reference
+	alignment = detailed placement of each base in a read - which includes mapping
+	
+	RNA has different problems when trying to align to a reference
+		challenge 1 - mapping reads across intron-exon boundaries
+			solutions:	map reads to a transcriptome (e.g. RSEM)
+						two-stage mapping to the genome (e.g. TopHat)
+						seed extension methods map small chunks to the genome and extend to junctions, e.g. GSNAP
+		challenge 2 - splice variants - differential expression of alternatively spliced transcripts
+				can look at quantities of various isoforms (versions of splicing) to see what's happening
+			"challenge 2 = identifying abundance of alternatively spliced variants"
+		challenge 3 - map filtered reads back to the transcriptome and count the number of reads that align to each contig
+			reads can map to your contig or a paralagous read in a different gene (reads that have a high map score to the genome) - called multi-reads
+				due to gene duplications etc
+			"challenge 3 = dealing with multireads at the gene- and isoform-level"
+			solutions:	discard them and estimate expression only from uniquely mapping reads
+						rescue multiireads by allocating fractions of them to each contig, in proportion to the number of uniquely mapping reads mapping to each contig
+						max-likelihood algorithms to assign multireads and sum across all isoforms to get a gene-level estimate, e.g. RSEM
+	
+	a practical approach to quantifying expression
+		RSEM, provides a single pipeline to align sequence reads and eatimate expression counts for each contig
+		when used in conjunction with Trinity, a trinity-build transcriptome assembly, it will estimate isoform-level expression counts
+		in contrast to tophat and other approaches, it does not require a sequenced genome already assembled, and reasonable ref. transcriptomes can be built de novo using trinity non-model organisms
+		.....
+	
+		tophats and cufflinks
+			use a reference genome to quantify expression levels
+			tophat may be less accurate than RSEM
+	
+	last step - counting the number of reads to quantify expression
+		i.e. we have to normalize because there are lots of read fragments, and it varies by length of the gene we were using and the difference in individuals in terms of the total amount of RNA analyzed
+		FPKM is one method - fragments per kilobase of transcript per million reads mapped --- standardize per gene length and number of reads per individual that were mapped anywhere on the genome
+			this allows comparable comparison across genes and individuals
+		RPKM is similar, reads per kilobase of transcript per million reads mapped
+		
+	in the end we find out amount of mRNA represented by the reads we have
+	
+	then statistical analysis of differences in expression vs background noise
+	
+	*technical replication means multiple libraries per individual to get an estimate of variance among sequencing runs
+	
+	2 broad approaches to analysis:
+		1) analyzing differential gene expression on gene-by-gene basis, e.g. DESeq, EdgeR, limma
+			examine how each gene is affected by a given treatment
+			...
+		2) analysis of patterns of gene co-expression and identification of clusters of genes that have similar patterns of expression
+			identify clustes of genes that are upregulates in treatment X and downregulated in treatment Y
+		
+	
+	2 sources of variation in RNAseq
+		biological variation - the stuff we care about - differences in expression arising due to real differences
+			any uncontrolled errors should be homogeneous across inds
+		technical variation - measurement error inherent in the sequencing process
+			if we could sequence an infinite number of reads, technical error would disappear
+	
+	analysis: do a regression of the normalized counts onto the variables of interest
+	
+	not all genes are expected to behave the same though, e.g. important genes will be constrained in constant expression, whereas a less important one may have no constraints and much more variance in expression
+		EdgeR tries to work with both of these assumptions
+		fits a common dispersion model, then a tagwise dispersion model - leads to more accurate estimate of if there is differential expression in genes
+	
+	heat maps are also a good way to display gene expression
+	
+	there are lots of technical considerations with RNAseq
+		especially depth of coverage
+			highly dependent on study organism and transcriptome size
+			little power to detect changes in expression when <50 counts per million per gene, so try to have 50 counts per million per gene or more
+			too many individuals per lane can increase your technical variation
+	
+
+1/26/15
+
+Variant calling
+
 	
 	
 	
