@@ -453,6 +453,43 @@ RNAseq and analysis of differential gene expression
 
 Variant calling
 
+	step 1 - alignments
+		need to remember which tool was used for aligning so that quality information is known as well
+	
+	after aligning, you get the cigar string which has all the mismatches
+		so these are all the variants we want
+		BUT have to remove the false positives
+	
+		can either find this yourself or using Picard
+		if 2 strings have the same starting position and the same cigar string, then they are duplicates
+		
+	step 2(?) remove duplicates?
+	step 3(?) realignments - around indels
+	
+	any sequence mismatch = an error EXCEPT for known variants
+	
+	if both alleles exist on both strands, then it is probably real?
+	
+	Beagle is an imputation software - ADAPTREE DIDN'T USE THIS FOR SOME REASON
+	
+	VCF files store variant information
+	
+	there are tools to detect structural variation as well as copy number variation
+	
+	exercises - call variants, check vcf, prepare snp table
 	
 	
+1/27/15
+
+Genome scans and signatures of demography and adaptation
 	
+	genomic data gives greater resolution to evaluate and illustrate patterns
+	more power as well with genomic data, so new methods to do more fine scale or detailed things?
+	
+	
+	bayes factors interpreted much more vaguely than p values?
+	so instead use relative significance - an empirical p value based on a distribution of loci known to be neutral
+		is that distribution shifted from your test distribution?
+		- problem is we don't know for sure if something is neutral
+		- another problem is false positives
+		
