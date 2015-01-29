@@ -1,0 +1,262 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Pkinase              PF00069.20 Pp1s112_185V2_2      -            5.4e-37  127.3   0.0     6e-37  127.2   0.0   1.0   1   0   0   1   1   1   1 Protein kinase domain
+Pkinase_Tyr          PF07714.12 Pp1s112_185V2_2      -            1.3e-35  122.7   0.0   1.5e-35  122.5   0.0   1.0   1   0   0   1   1   1   1 Protein tyrosine kinase
+APH                  PF01636.18 Pp1s112_185V2_2      -            0.00093   18.9   0.1    0.0012   18.6   0.1   1.1   1   0   0   1   1   1   1 Phosphotransferase enzyme family
+PIP49_C              PF12260.3  Pp1s112_185V2_2      -             0.0019   17.6   0.0    0.0024   17.2   0.0   1.1   1   0   0   1   1   1   1 Protein-kinase domain of FAM69
+Kinase-like          PF14531.1  Pp1s112_185V2_2      -              0.028   13.4   0.0     0.034   13.1   0.0   1.1   1   0   0   1   1   1   0 Kinase-like
+Pox_ser-thr_kin      PF05445.6  Pp1s112_185V2_2      -              0.068   11.9   0.1       0.1   11.3   0.1   1.2   1   0   0   1   1   1   0 Poxvirus serine/threonine protein kinase
+Seadorna_VP7         PF07387.6  Pp1s112_185V2_2      -              0.084   11.6   0.0      0.12   11.1   0.0   1.2   1   0   0   1   1   1   0 Seadornavirus VP7
+Pkinase              PF00069.20 Pp1s162_57V2_2       -            1.1e-21   77.2   0.1   1.1e-21   77.1   0.1   1.0   1   0   0   1   1   1   1 Protein kinase domain
+Pkinase_Tyr          PF07714.12 Pp1s162_57V2_2       -            3.1e-17   62.5   0.0   3.3e-17   62.4   0.0   1.0   1   0   0   1   1   1   1 Protein tyrosine kinase
+Kdo                  PF06293.9  Pp1s162_57V2_2       -             0.0065   15.5   0.1    0.0075   15.3   0.1   1.1   1   0   0   1   1   1   1 Lipopolysaccharide kinase (Kdo/WaaP) family
+ANTH                 PF07651.11 Pp1s17_213V2_1       -           8.8e-101  336.2   0.1    1e-100  336.0   0.1   1.1   1   0   0   1   1   1   1 ANTH domain
+ENTH                 PF01417.15 Pp1s17_213V2_1       -            2.2e-05   24.2   0.0   3.5e-05   23.6   0.0   1.3   1   0   0   1   1   1   1 ENTH domain
+Pkinase_Tyr          PF07714.12 Pp1s126_187V2_1      -              5e-31  107.7   0.0     2e-30  105.7   0.0   1.8   1   1   0   1   1   1   1 Protein tyrosine kinase
+Pkinase              PF00069.20 Pp1s126_187V2_1      -            7.1e-26   90.8   0.0   1.1e-25   90.3   0.0   1.2   1   0   0   1   1   1   1 Protein kinase domain
+PIP49_C              PF12260.3  Pp1s126_187V2_1      -              0.028   13.8   0.0     0.047   13.1   0.0   1.3   1   0   0   1   1   1   0 Protein-kinase domain of FAM69
+NB-ARC               PF00931.17 Pp1s1_333V2_1        -            6.2e-37  127.0   0.0   6.9e-37  126.8   0.0   1.0   1   0   0   1   1   1   1 NB-ARC domain
+AAA_22               PF13401.1  Pp1s1_333V2_1        -            7.2e-05   22.9   0.0   0.00073   19.6   0.0   2.0   2   0   0   2   2   2   1 AAA domain
+eIF-5a               PF01287.15 Pp1s1_333V2_1        -              0.099   12.6   0.1      0.18   11.7   0.1   1.4   1   0   0   1   1   1   0 Eukaryotic elongation factor 5A hypusine, DNA-binding OB fold
+Pkinase_Tyr          PF07714.12 Pp1s384_15V2_1       -            3.9e-42  144.1   0.0     5e-42  143.7   0.0   1.1   1   0   0   1   1   1   1 Protein tyrosine kinase
+Pkinase              PF00069.20 Pp1s384_15V2_1       -            1.7e-39  135.5   0.0   1.9e-39  135.4   0.0   1.0   1   0   0   1   1   1   1 Protein kinase domain
+DUF296               PF03479.10 Pp1s45_204V2_1       -            1.7e-37  127.6   0.4     2e-37  127.4   0.4   1.1   1   0   0   1   1   1   1 Domain of unknown function (DUF296)
+X8                   PF07983.8  Pp1s110_78V2_1       -            3.9e-06   27.2   0.1   5.6e-06   26.7   0.1   1.3   1   1   0   1   1   1   1 X8 domain
+Rhodanese            PF00581.15 Pp1s69_133V2_2       -              0.013   15.7   0.0     0.018   15.4   0.0   1.2   1   0   0   1   1   1   0 Rhodanese-like domain
+Glyco_hydro_114      PF03537.8  Pp1s69_133V2_2       -              0.053   13.2   0.0     0.099   12.4   0.0   1.6   1   1   1   2   2   2   0 Glycoside-hydrolase family GH114
+Pollen_allerg_1      PF01357.16 Pp1s196_32V2_1       -            2.3e-22   78.5   0.2   2.8e-22   78.3   0.2   1.1   1   0   0   1   1   1   1 Pollen allergen
+Spermine_synth       PF01564.12 Pp1s196_32V2_1       -              0.016   14.1   0.0     0.018   14.0   0.0   1.0   1   0   0   1   1   1   0 Spermine/spermidine synthase
+Rhodanese            PF00581.15 Pp1s94_133V2_1       -              2e-05   24.8   0.0   2.7e-05   24.4   0.0   1.1   1   0   0   1   1   1   1 Rhodanese-like domain
+Glyco_transf_34      PF05637.7  Pp1s17_17V2_1        -            5.5e-59  199.5   0.1   1.5e-58  198.1   0.1   1.6   1   1   0   1   1   1   1 galactosyl transferase GMA12/MNN10 family
+DUF273               PF03314.9  Pp1s17_17V2_1        -              0.042   13.1   0.2       0.1   11.9   0.0   1.7   2   0   0   2   2   2   0 Protein of unknown function, DUF273
+cwf18                PF08315.7  Pp1s17_17V2_1        -              0.073   13.5   4.8      0.17   12.3   0.1   2.2   2   0   0   2   2   2   0 cwf18 pre-mRNA splicing factor
+Glycos_transf_2      PF00535.21 Pp1s17_17V2_1        -              0.074   12.7   0.0      0.13   11.9   0.0   1.4   1   0   0   1   1   1   0 Glycosyl transferase family 2
+fn3                  PF00041.16 Pp1s17_201V2_1       -             0.0042   17.1   0.1     0.017   15.2   0.1   1.9   1   1   0   1   1   1   1 Fibronectin type III domain
+E1-E2_ATPase         PF00122.15 Pp1s31_60V2_1        -              4e-16   58.7   0.0   1.3e-15   57.0   0.0   1.9   2   0   0   2   2   2   1 E1-E2 ATPase
+HAD                  PF12710.2  Pp1s31_60V2_1        -            9.7e-15   55.2   0.0   3.2e-14   53.5   0.0   2.0   1   1   0   1   1   1   1 haloacid dehalogenase-like hydrolase
+Hydrolase            PF00702.21 Pp1s31_60V2_1        -            1.4e-14   55.0   1.2     1e-12   48.9   1.2   3.2   1   1   0   1   1   1   1 haloacid dehalogenase-like hydrolase
+Hydrolase_like2      PF13246.1  Pp1s31_60V2_1        -            2.2e-12   46.7   0.1   1.1e-11   44.4   0.0   2.3   3   0   0   3   3   3   1 Putative hydrolase of sodium-potassium ATPase alpha subunit
+Hydrolase_3          PF08282.7  Pp1s31_60V2_1        -              0.047   13.2   0.1      0.12   11.9   0.1   1.6   1   0   0   1   1   1   0 haloacid dehalogenase-like hydrolase
+DUF21                PF01595.15 Pp1s31_60V2_1        -                0.1   11.8   4.3      0.99    8.6   2.1   2.4   2   0   0   2   2   2   0 Domain of unknown function DUF21
+Pkinase_Tyr          PF07714.12 Pp1s64_17V2_1        -            1.3e-41  142.4   0.0   1.6e-41  142.0   0.0   1.1   1   0   0   1   1   1   1 Protein tyrosine kinase
+Pkinase              PF00069.20 Pp1s64_17V2_1        -            6.4e-39  133.6   0.0   7.9e-39  133.3   0.0   1.1   1   0   0   1   1   1   1 Protein kinase domain
+ABC1                 PF03109.11 Pp1s64_17V2_1        -             0.0039   17.1   0.0    0.0089   15.9   0.0   1.6   2   0   0   2   2   2   1 ABC1 family
+APH                  PF01636.18 Pp1s64_17V2_1        -              0.029   14.1   0.0      0.58    9.8   0.0   2.0   1   1   1   2   2   2   0 Phosphotransferase enzyme family
+Abhydrolase_6        PF12697.2  Pp1s65_16V2_1        -            1.1e-24   87.6   0.0   1.4e-24   87.2   0.0   1.1   1   0   0   1   1   1   1 Alpha/beta hydrolase family
+Abhydrolase_5        PF12695.2  Pp1s65_16V2_1        -            2.8e-11   43.3   0.0   4.2e-11   42.7   0.0   1.3   1   1   0   1   1   1   1 Alpha/beta hydrolase family
+Abhydrolase_1        PF00561.15 Pp1s65_16V2_1        -            1.4e-10   41.0   0.1   6.7e-06   25.8   0.1   2.1   1   1   1   2   2   2   2 alpha/beta hydrolase fold
+LCAT                 PF02450.10 Pp1s65_16V2_1        -              0.018   14.0   0.0     0.057   12.3   0.0   1.7   1   1   1   2   2   2   0 Lecithin:cholesterol acyltransferase
+DUF676               PF05057.9  Pp1s65_16V2_1        -              0.076   12.2   0.0      0.12   11.6   0.0   1.4   1   0   0   1   1   1   0 Putative serine esterase (DUF676)
+Mo25                 PF08569.6  Pp1s68_236V2_1       -           1.7e-115  385.6  10.6  1.9e-115  385.5  10.6   1.0   1   0   0   1   1   1   1 Mo25-like
+HEAT_2               PF13646.1  Pp1s68_236V2_1       -            0.00013   22.1   0.1     0.016   15.4   0.0   2.6   2   0   0   2   2   2   1 HEAT repeats
+Dpoe2NT              PF12213.3  Pp1s68_236V2_1       -             0.0005   19.9   0.1    0.0019   18.0   0.1   2.0   1   0   0   1   1   1   1 DNA polymerases epsilon N terminal
+Arm                  PF00514.18 Pp1s68_236V2_1       -              0.034   13.9   0.0       7.1    6.6   0.0   3.0   3   0   0   3   3   3   0 Armadillo/beta-catenin-like repeat
+DUF544               PF04424.8  Pp1s68_236V2_1       -              0.065   13.0   2.7     0.098   12.4   0.4   2.3   2   1   0   2   2   2   0 Protein of unknown function (DUF544)
+ubiquitin            PF00240.18 Pp1s129_28V2_1       -            1.9e-62  206.5   4.0   1.4e-33  114.0   1.2   2.0   2   0   0   2   2   2   2 Ubiquitin family
+Rad60-SLD            PF11976.3  Pp1s129_28V2_1       -            4.9e-38  128.6   5.7   6.3e-20   70.6   1.1   2.0   2   0   0   2   2   2   2 Ubiquitin-2 like Rad60 SUMO-like
+Ubiquitin_2          PF14560.1  Pp1s129_28V2_1       -            1.1e-12   47.9   1.3   4.7e-05   23.5   0.3   3.1   2   2   0   2   2   2   2 Ubiquitin-like domain
+Rad60-SLD_2          PF13881.1  Pp1s129_28V2_1       -            9.6e-06   25.4   0.3     0.022   14.6   0.0   2.8   1   1   1   2   2   2   2 Ubiquitin-2 like Rad60 SUMO-like
+DUF2407              PF10302.4  Pp1s129_28V2_1       -            3.7e-05   23.8   0.2     0.029   14.5   0.1   2.2   1   1   1   2   2   2   2 DUF2407 ubiquitin-like domain
+Telomere_Sde2        PF13019.1  Pp1s129_28V2_1       -            9.4e-05   22.1   0.0   0.00065   19.4   0.0   1.9   1   1   1   2   2   2   1 Telomere stability and silencing
+CTDII                PF01556.13 Pp1s129_28V2_1       -             0.0016   18.3   3.8     0.073   12.9   0.6   2.4   2   1   0   2   2   2   2 DnaJ C terminal domain
+DUF2870              PF11069.3  Pp1s129_28V2_1       -             0.0031   17.5   0.0       0.6   10.1   0.0   2.5   3   0   0   3   3   3   1 Protein of unknown function (DUF2870)
+TUG-UBL1             PF11470.3  Pp1s129_28V2_1       -             0.0044   16.9   0.0       1.4    8.8   0.1   2.2   2   0   0   2   2   2   2 GLUT4 regulating protein TUG
+USP7_C2              PF14533.1  Pp1s129_28V2_1       -              0.067   12.6   0.7       5.8    6.2   0.1   2.1   1   1   0   2   2   2   0 Ubiquitin-specific protease C-terminal
+DUF3861              PF12977.2  Pp1s129_28V2_1       -               0.11   12.6   1.4       5.6    7.1   0.1   2.7   1   1   2   3   3   3   0 Domain of Unknown Function with PDB structure (DUF3861)
+Plexin_cytopl        PF08337.7  Pp1s129_28V2_1       -               0.29    9.3   1.4       6.9    4.8   0.0   2.6   1   1   1   2   2   2   0 Plexin cytoplasmic RasGAP domain
+fn3                  PF00041.16 Pp1s132_47V2_1       -               0.12   12.5   0.2      0.54   10.4   0.2   2.0   1   1   0   1   1   1   0 Fibronectin type III domain
+Methyltransf_6       PF03737.10 Pp1s197_40V2_1       -            5.1e-46  156.3   0.9   5.7e-46  156.1   0.9   1.0   1   0   0   1   1   1   1 Demethylmenaquinone methyltransferase
+E1-E2_ATPase         PF00122.15 Pp1s210_54V2_1       -            3.5e-18   65.5   0.0   1.4e-17   63.5   0.0   2.0   2   0   0   2   2   2   1 E1-E2 ATPase
+HAD                  PF12710.2  Pp1s210_54V2_1       -            3.4e-14   53.4   0.0   1.7e-13   51.1   0.0   2.2   1   1   0   1   1   1   1 haloacid dehalogenase-like hydrolase
+Hydrolase            PF00702.21 Pp1s210_54V2_1       -            6.8e-12   46.2   0.1   1.5e-06   28.7   0.1   3.2   2   1   0   2   2   2   2 haloacid dehalogenase-like hydrolase
+Hydrolase_like2      PF13246.1  Pp1s210_54V2_1       -            2.6e-10   40.0   0.0     7e-10   38.7   0.0   1.7   1   0   0   1   1   1   1 Putative hydrolase of sodium-potassium ATPase alpha subunit
+Hydrolase_3          PF08282.7  Pp1s210_54V2_1       -               0.01   15.4   0.0     0.017   14.6   0.0   1.3   1   0   0   1   1   1   1 haloacid dehalogenase-like hydrolase
+Epimerase            PF01370.16 Pp1s277_57V2_1       -              3e-54  183.9   0.0   4.4e-54  183.4   0.0   1.2   1   0   0   1   1   1   1 NAD dependent epimerase/dehydratase family
+Epimerase_Csub       PF13950.1  Pp1s277_57V2_1       -            3.1e-18   65.4   0.1   6.4e-18   64.4   0.1   1.5   1   0   0   1   1   1   1 UDP-glucose 4-epimerase C-term subunit
+3Beta_HSD            PF01073.14 Pp1s277_57V2_1       -            1.6e-16   59.8   0.0   8.8e-15   54.1   0.0   2.1   2   0   0   2   2   2   1 3-beta hydroxysteroid dehydrogenase/isomerase family
+Polysacc_synt_2      PF02719.10 Pp1s277_57V2_1       -            1.7e-15   56.7   0.0   4.4e-14   52.0   0.0   2.6   2   1   0   2   2   2   1 Polysaccharide biosynthesis protein
+RmlD_sub_bind        PF04321.12 Pp1s277_57V2_1       -            1.6e-11   43.6   0.0   3.8e-11   42.4   0.0   1.5   1   1   0   1   1   1   1 RmlD substrate binding domain
+NAD_binding_4        PF07993.7  Pp1s277_57V2_1       -            1.4e-10   40.5   0.1   7.6e-10   38.1   0.1   1.9   1   1   0   1   1   1   1 Male sterility protein
+NAD_binding_10       PF13460.1  Pp1s277_57V2_1       -            2.6e-09   37.3   0.0   1.2e-08   35.2   0.0   2.1   2   1   0   2   2   2   1 NADH(P)-binding
+adh_short            PF00106.20 Pp1s277_57V2_1       -            2.3e-06   27.6   0.0   4.2e-06   26.7   0.0   1.4   1   0   0   1   1   1   1 short chain dehydrogenase
+KR                   PF08659.5  Pp1s277_57V2_1       -             0.0014   18.3   0.0    0.0028   17.3   0.0   1.5   1   0   0   1   1   1   1 KR domain
+NmrA                 PF05368.8  Pp1s277_57V2_1       -              0.029   13.6   0.0     0.053   12.7   0.0   1.4   1   0   0   1   1   1   0 NmrA-like family
+UDPG_MGDP_dh_N       PF03721.9  Pp1s277_57V2_1       -              0.029   13.7   0.1      0.36   10.1   0.0   2.2   2   0   0   2   2   2   0 UDP-glucose/GDP-mannose dehydrogenase family, NAD binding domain
+NAD_binding_8        PF13450.1  Pp1s277_57V2_1       -                0.1   12.6   0.0       0.5   10.4   0.0   2.2   1   0   0   1   1   1   0 NAD(P)-binding Rossmann-like domain
+DUF3792              PF12670.2  Pp1s277_57V2_1       -               0.13   12.0   1.5      0.25   11.2   1.5   1.3   1   0   0   1   1   1   0 Protein of unknown function (DUF3792)
+E1-E2_ATPase         PF00122.15 Pp1s290_16V2_1       -            6.5e-61  205.2   5.9   6.5e-61  205.2   5.9   2.1   2   0   0   2   2   2   1 E1-E2 ATPase
+Cation_ATPase_C      PF00689.16 Pp1s290_16V2_1       -            1.1e-43  148.8   5.3   1.1e-43  148.8   5.3   2.4   3   0   0   3   3   3   1 Cation transporting ATPase, C-terminus
+Hydrolase            PF00702.21 Pp1s290_16V2_1       -            1.5e-29  103.9   0.0   4.8e-29  102.3   0.0   1.8   1   1   0   1   1   1   1 haloacid dehalogenase-like hydrolase
+HAD                  PF12710.2  Pp1s290_16V2_1       -            4.4e-19   69.3   0.0   7.9e-19   68.5   0.0   1.4   1   0   0   1   1   1   1 haloacid dehalogenase-like hydrolase
+Hydrolase_like2      PF13246.1  Pp1s290_16V2_1       -            1.5e-15   56.8   0.0   3.1e-15   55.8   0.0   1.5   1   0   0   1   1   1   1 Putative hydrolase of sodium-potassium ATPase alpha subunit
+Cation_ATPase_N      PF00690.21 Pp1s290_16V2_1       -            1.1e-13   50.4   0.0   2.6e-13   49.2   0.0   1.7   1   0   0   1   1   1   1 Cation transporter/ATPase, N-terminus
+CaATP_NAI            PF12515.3  Pp1s290_16V2_1       -            1.6e-10   40.2   3.7   5.4e-10   38.6   3.7   1.9   1   0   0   1   1   1   1 Ca2+-ATPase N terminal autoinhibitory domain
+Hydrolase_3          PF08282.7  Pp1s290_16V2_1       -              1e-05   25.2   0.4     0.004   16.7   0.2   2.4   1   1   1   2   2   2   2 haloacid dehalogenase-like hydrolase
+SdpI                 PF13630.1  Pp1s290_16V2_1       -               0.17   11.5   0.1      0.17   11.5   0.1   3.4   3   0   0   3   3   3   0 SdpI/YhfL protein family
+DUF702               PF05142.7  Pp1s373_11V2_1       -            2.4e-63  212.9   4.7   2.4e-63  212.9   4.7   1.5   2   0   0   2   2   2   1 Domain of unknown function (DUF702)
+Lipoxygenase         PF00305.14 Pp1s419_8V2_1        -           3.1e-229  762.3   0.0  3.7e-229  762.1   0.0   1.0   1   0   0   1   1   1   1 Lipoxygenase
+PLAT                 PF01477.18 Pp1s419_8V2_1        -            5.8e-07   29.8   0.4     4e-06   27.1   0.0   2.5   3   0   0   3   3   3   1 PLAT/LH2 domain
+SUKH-4               PF14435.1  Pp1s419_8V2_1        -              0.008   15.9   0.1      0.82    9.3   0.0   2.4   2   0   0   2   2   2   2 SUKH-4 immunity protein
+SRF-TF               PF00319.13 Pp1s55_280V2_1       -            3.8e-25   86.8   0.0   7.1e-25   85.9   0.0   1.5   1   0   0   1   1   1   1 SRF-type transcription factor (DNA-binding and dimerisation domain)
+Proteasome_A_N       PF10584.4  Pp1s55_280V2_1       -               0.09   12.1   0.0      0.18   11.1   0.0   1.5   1   0   0   1   1   1   0 Proteasome subunit A N-terminal signature
+Imm29                PF15575.1  Pp1s55_280V2_1       -               0.65    9.5   5.8      0.61    9.6   4.5   1.7   1   1   0   1   1   1   0 Immunity protein 29
+TSA                  PF03249.8  Pp1s55_280V2_1       -                8.1    4.8  14.6       6.4    5.1  12.5   1.6   1   1   1   2   2   2   0 Type specific antigen
+Amidase              PF01425.16 Pp1s32_119V2_1       -            1.7e-72  244.7   0.0   8.2e-72  242.4   0.0   1.8   1   1   0   1   1   1   1 Amidase
+Lac_bphage_repr      PF06543.7  Pp1s32_119V2_1       -              0.021   14.3   0.0     0.075   12.5   0.0   1.9   2   0   0   2   2   2   0 Lactococcus bacteriophage repressor
+NMT1                 PF09084.6  Pp1s54_247V2_1       -            3.1e-36  124.9   0.0   1.4e-31  109.7   0.0   2.2   2   0   0   2   2   2   2 NMT1/THI5 like
+E1-E2_ATPase         PF00122.15 Pp1s87_152V2_1       -            1.1e-15   57.2   0.9   1.9e-15   56.5   0.0   1.8   2   0   0   2   2   2   1 E1-E2 ATPase
+HAD                  PF12710.2  Pp1s87_152V2_1       -              3e-15   56.9   0.2   7.3e-15   55.6   0.2   1.7   1   0   0   1   1   1   1 haloacid dehalogenase-like hydrolase
+Hydrolase_like2      PF13246.1  Pp1s87_152V2_1       -            2.5e-12   46.5   0.0   1.1e-11   44.4   0.0   2.1   2   0   0   2   2   2   1 Putative hydrolase of sodium-potassium ATPase alpha subunit
+Hydrolase            PF00702.21 Pp1s87_152V2_1       -            5.7e-12   46.5   0.7   1.2e-08   35.6   0.6   3.0   2   1   0   2   2   2   2 haloacid dehalogenase-like hydrolase
+Hydrolase_3          PF08282.7  Pp1s87_152V2_1       -              0.005   16.4   0.7     0.013   15.0   0.2   1.8   2   0   0   2   2   2   1 haloacid dehalogenase-like hydrolase
+DUF4083              PF13314.1  Pp1s87_152V2_1       -               0.61    9.9   5.1        34    4.3   0.8   3.8   3   0   0   3   3   3   0 Domain of unknown function (DUF4083)
+TrkA_C               PF02080.16 Pp1s88_194V2_1       -              3e-42  142.0   0.6     6e-12   44.9   0.1   4.4   4   0   0   4   4   4   4 TrkA-C domain
+CitMHS               PF03600.11 Pp1s88_194V2_1       -            1.4e-19   69.9  24.7   1.2e-12   47.1   6.7   3.2   1   1   2   3   3   3   3 Citrate transporter
+Na_sulph_symp        PF00939.14 Pp1s88_194V2_1       -            8.4e-15   54.5  24.9   2.4e-12   46.4  12.2   3.0   2   1   1   3   3   3   2 Sodium:sulfate symporter transmembrane region
+MatC_N               PF07158.6  Pp1s88_194V2_1       -                6.4    6.5  13.9      0.35   10.6   3.2   2.7   2   0   0   2   2   2   0 Dicarboxylate carrier protein MatC N-terminus
+NB-ARC               PF00931.17 Pp1s202_47V2_1       -            1.2e-17   63.6   0.0   2.2e-17   62.8   0.0   1.3   1   0   0   1   1   1   1 NB-ARC domain
+LRR_4                PF12799.2  Pp1s202_47V2_1       -            4.8e-14   51.6  32.1    0.0058   16.2   0.3   9.4   4   3   6  10  10  10   6 Leucine Rich repeats (2 copies)
+TIR_2                PF13676.1  Pp1s202_47V2_1       -              1e-10   41.6   0.0   2.3e-10   40.5   0.0   1.6   1   0   0   1   1   1   1 TIR domain
+TIR                  PF01582.15 Pp1s202_47V2_1       -            2.2e-09   36.8   0.5   6.6e-09   35.3   0.0   2.0   2   0   0   2   2   2   1 TIR domain
+AAA_22               PF13401.1  Pp1s202_47V2_1       -              5e-06   26.6   0.0   2.4e-05   24.4   0.0   2.1   2   0   0   2   2   2   1 AAA domain
+AAA_16               PF13191.1  Pp1s202_47V2_1       -            0.00012   22.0   0.0   0.00027   20.9   0.0   1.5   1   0   0   1   1   1   1 AAA ATPase domain
+KAP_NTPase           PF07693.9  Pp1s202_47V2_1       -             0.0014   17.7   0.0    0.0021   17.1   0.0   1.2   1   0   0   1   1   1   1 KAP family P-loop domain
+AAA_17               PF13207.1  Pp1s202_47V2_1       -             0.0032   18.2   0.0    0.0094   16.7   0.0   1.9   1   0   0   1   1   1   1 AAA domain
+UPF0079              PF02367.12 Pp1s202_47V2_1       -              0.019   14.6   0.1     0.047   13.3   0.1   1.6   1   0   0   1   1   1   0 Uncharacterised P-loop hydrolase UPF0079
+NACHT                PF05729.7  Pp1s202_47V2_1       -              0.038   13.6   0.3      0.94    9.1   0.1   2.3   2   0   0   2   2   2   0 NACHT domain
+RNA_helicase         PF00910.17 Pp1s202_47V2_1       -              0.054   13.6   0.1      0.11   12.7   0.1   1.5   1   0   0   1   1   1   0 RNA helicase
+AAA                  PF00004.24 Pp1s202_47V2_1       -              0.064   13.4   0.0      0.13   12.4   0.0   1.6   1   0   0   1   1   1   0 ATPase family associated with various cellular activities (AAA)
+ABC_tran             PF00005.22 Pp1s202_47V2_1       -               0.11   12.8   0.0       0.2   11.9   0.0   1.4   1   0   0   1   1   1   0 ABC transporter
+LRR_1                PF00560.28 Pp1s202_47V2_1       -               0.63   10.2  25.5       9.3    6.7   0.1   8.6   5   2   3   8   8   8   0 Leucine Rich Repeat
+Pkinase              PF00069.20 Pp1s235_102V2_1      -            6.6e-73  245.0   0.3   1.5e-72  243.8   0.0   1.6   2   0   0   2   2   2   1 Protein kinase domain
+Pkinase_Tyr          PF07714.12 Pp1s235_102V2_1      -            2.3e-31  108.8   0.2   5.8e-31  107.4   0.0   1.7   2   0   0   2   2   2   1 Protein tyrosine kinase
+Kinase-like          PF14531.1  Pp1s235_102V2_1      -             0.0015   17.6   0.0    0.0097   14.8   0.0   2.0   1   1   0   1   1   1   1 Kinase-like
+Seadorna_VP7         PF07387.6  Pp1s235_102V2_1      -                0.1   11.4   0.1      0.16   10.7   0.1   1.2   1   0   0   1   1   1   0 Seadornavirus VP7
+PAT1                 PF09770.4  Pp1s235_102V2_1      -               0.83    7.8  11.6       1.5    7.0  11.6   1.3   1   0   0   1   1   1   0 Topoisomerase II-associated protein PAT1
+Glyco_hydro_76       PF03663.9  Pp1s241_107V2_1      -              3e-45  155.1  16.8   3.7e-45  154.8  16.8   1.0   1   0   0   1   1   1   1 Glycosyl hydrolase family 76
+CitMHS               PF03600.11 Pp1s246_109V2_1      -            2.3e-17   62.6  12.7   3.8e-17   61.9  12.7   1.4   1   0   0   1   1   1   1 Citrate transporter
+Coa1                 PF08695.5  Pp1s246_109V2_1      -              0.054   12.9   0.0      0.15   11.5   0.0   1.7   1   0   0   1   1   1   0 Cytochrome oxidase complex assembly protein 1
+Dynamin_N            PF00350.18 Pp1s265_34V2_1       -              2e-35  122.1   0.0   4.4e-35  120.9   0.0   1.6   1   0   0   1   1   1   1 Dynamin family
+MMR_HSR1             PF01926.18 Pp1s265_34V2_1       -            0.00067   19.6   0.0    0.0033   17.3   0.0   2.2   2   1   0   2   2   2   1 50S ribosome-binding GTPase
+AAA_16               PF13191.1  Pp1s265_34V2_1       -               0.03   14.3   0.0      0.75    9.7   0.0   2.9   2   1   0   2   2   2   0 AAA ATPase domain
+Dynamin_M            PF01031.15 Pp1s265_34V2_1       -              0.051   12.3   0.4       5.6    5.6   0.1   2.4   2   0   0   2   2   2   0 Dynamin central region
+GTP_EFTU             PF00009.22 Pp1s265_34V2_1       -              0.052   12.9   0.1      0.55    9.6   0.1   2.6   1   1   0   1   1   1   0 Elongation factor Tu GTP binding domain
+Miro                 PF08477.8  Pp1s265_34V2_1       -              0.081   13.4   0.0      0.25   11.8   0.0   1.9   1   0   0   1   1   1   0 Miro-like protein
+SRF-TF               PF00319.13 Pp1s8_95V2_1         -            1.3e-25   88.3   0.0   2.1e-25   87.6   0.0   1.4   1   0   0   1   1   1   1 SRF-type transcription factor (DNA-binding and dimerisation domain)
+Pex14_N              PF04695.8  Pp1s8_95V2_1         -                2.5    8.1  14.4       6.8    6.7   6.1   2.6   2   0   0   2   2   2   0 Peroxisomal membrane anchor protein (Pex14p) conserved region
+Cyt-b5               PF00173.23 Pp1s22_58V2_1        -            1.1e-16   60.3   0.0   1.5e-16   59.9   0.0   1.2   1   0   0   1   1   1   1 Cytochrome b5-like Heme/Steroid binding domain
+Glyco_hydro_17       PF00332.13 Pp1s27_327V2_1       -            1.6e-67  227.7   0.1   1.9e-67  227.4   0.1   1.1   1   0   0   1   1   1   1 Glycosyl hydrolases family 17
+X8                   PF07983.8  Pp1s27_327V2_1       -            1.3e-12   48.0   3.6   2.2e-12   47.3   3.6   1.4   1   0   0   1   1   1   1 X8 domain
+FAE1_CUT1_RppA       PF08392.7  Pp1s28_28V2_1        -           3.8e-144  479.1   0.0  4.9e-144  478.7   0.0   1.1   1   0   0   1   1   1   1 FAE1/Type III polyketide synthase-like protein
+ACP_syn_III_C        PF08541.5  Pp1s28_28V2_1        -              2e-13   50.1   0.0   1.2e-11   44.4   0.0   3.1   3   0   0   3   3   3   1 3-Oxoacyl-[acyl-carrier-protein (ACP)] synthase III C terminal
+Chal_sti_synt_C      PF02797.10 Pp1s28_28V2_1        -            2.4e-09   37.2   0.0   4.4e-09   36.4   0.0   1.4   1   0   0   1   1   1   1 Chalcone and stilbene synthases, C-terminal domain
+ACP_syn_III          PF08545.5  Pp1s28_28V2_1        -            5.6e-05   22.7   0.0   0.00012   21.7   0.0   1.4   1   0   0   1   1   1   1 3-Oxoacyl-[acyl-carrier-protein (ACP)] synthase III
+Chal_sti_synt_N      PF00195.14 Pp1s28_28V2_1        -             0.0094   15.2   0.1     0.015   14.5   0.1   1.2   1   0   0   1   1   1   1 Chalcone and stilbene synthases, N-terminal domain
+Na_H_Exchanger       PF00999.16 Pp1s12_8V2_1         -            1.5e-56  191.6  43.8     2e-56  191.1  43.8   1.2   1   0   0   1   1   1   1 Sodium/hydrogen exchanger family
+cNMP_binding         PF00027.24 Pp1s12_8V2_1         -            1.7e-09   37.3   0.0   7.6e-09   35.2   0.0   2.1   1   0   0   1   1   1   1 Cyclic nucleotide-binding domain
+DUF3464              PF11947.3  Pp1s12_8V2_1         -                5.5    6.4  12.0       1.1    8.7   3.1   2.8   2   0   0   2   2   2   0 Protein of unknown function (DUF3464)
+Pantoate_ligase      PF02569.10 Pp1s16_385V2_1       -            4.5e-94  314.3   0.0   5.2e-94  314.1   0.0   1.0   1   0   0   1   1   1   1 Pantoate-beta-alanine ligase
+E1-E2_ATPase         PF00122.15 Pp1s62_171V2_1       -            1.7e-19   69.7   0.0   3.8e-19   68.6   0.0   1.6   1   0   0   1   1   1   1 E1-E2 ATPase
+HAD                  PF12710.2  Pp1s62_171V2_1       -            1.9e-15   57.5   0.0   7.9e-15   55.5   0.0   2.1   1   1   0   1   1   1   1 haloacid dehalogenase-like hydrolase
+Hydrolase            PF00702.21 Pp1s62_171V2_1       -              2e-13   51.2   0.4   9.4e-08   32.7   0.2   3.1   2   1   0   2   2   2   2 haloacid dehalogenase-like hydrolase
+Hydrolase_like2      PF13246.1  Pp1s62_171V2_1       -            2.7e-10   40.0   0.0     7e-10   38.7   0.0   1.7   1   0   0   1   1   1   1 Putative hydrolase of sodium-potassium ATPase alpha subunit
+Hydrolase_3          PF08282.7  Pp1s62_171V2_1       -               0.01   15.4   0.0      0.02   14.4   0.0   1.4   1   0   0   1   1   1   1 haloacid dehalogenase-like hydrolase
+Asp                  PF00026.18 Pp1s93_73V2_1        -           3.9e-128  427.1   0.0  5.8e-128  426.5   0.0   1.3   1   1   0   1   1   1   1 Eukaryotic aspartyl protease
+SapB_1               PF05184.10 Pp1s93_73V2_1        -            1.1e-14   53.7   0.3   1.1e-14   53.7   0.3   2.2   2   0   0   2   2   2   1 Saposin-like type B, region 1
+SapB_2               PF03489.12 Pp1s93_73V2_1        -            1.7e-14   53.5   3.6   3.6e-14   52.4   3.6   1.6   1   0   0   1   1   1   1 Saposin-like type B, region 2
+TAXi_N               PF14543.1  Pp1s93_73V2_1        -            1.4e-09   38.0   0.0   4.5e-09   36.4   0.0   1.9   1   1   0   1   1   1   1 Xylanase inhibitor N-terminal
+TAXi_C               PF14541.1  Pp1s93_73V2_1        -             0.0015   18.1   0.0     0.003   17.1   0.0   1.5   1   0   0   1   1   1   1 Xylanase inhibitor C-terminal
+Asp_protease_2       PF13650.1  Pp1s93_73V2_1        -              0.025   15.0   0.4      0.56   10.7   0.0   3.1   2   1   0   2   2   2   0 Aspartyl protease
+Glyco_transf_34      PF05637.7  Pp1s96_121V2_1       -            5.1e-62  209.4   0.0   1.7e-61  207.7   0.0   1.8   1   1   0   1   1   1   1 galactosyl transferase GMA12/MNN10 family
+DUF273               PF03314.9  Pp1s96_121V2_1       -              0.035   13.3   0.0     0.061   12.6   0.0   1.4   1   0   0   1   1   1   0 Protein of unknown function, DUF273
+Glyco_transf_34      PF05637.7  Pp1s100_136V2_1      -              1e-59  201.9   0.1   2.6e-59  200.6   0.1   1.6   1   1   0   1   1   1   1 galactosyl transferase GMA12/MNN10 family
+DUF273               PF03314.9  Pp1s100_136V2_1      -              0.016   14.5   0.0     0.033   13.4   0.0   1.5   1   0   0   1   1   1   0 Protein of unknown function, DUF273
+Glycos_transf_2      PF00535.21 Pp1s100_136V2_1      -              0.047   13.3   0.0       0.1   12.2   0.0   1.5   1   0   0   1   1   1   0 Glycosyl transferase family 2
+Lipoxygenase         PF00305.14 Pp1s419_7V2_1        -           3.1e-229  762.3   0.0  3.7e-229  762.1   0.0   1.0   1   0   0   1   1   1   1 Lipoxygenase
+PLAT                 PF01477.18 Pp1s419_7V2_1        -            5.8e-07   29.8   0.4     4e-06   27.1   0.0   2.5   3   0   0   3   3   3   1 PLAT/LH2 domain
+SUKH-4               PF14435.1  Pp1s419_7V2_1        -              0.008   15.9   0.1      0.82    9.3   0.0   2.4   2   0   0   2   2   2   2 SUKH-4 immunity protein
+CitMHS               PF03600.11 Pp1s270_12V2_1       -            3.2e-13   48.9   7.0   4.2e-13   48.6   7.0   1.2   1   0   0   1   1   1   1 Citrate transporter
+Na_sulph_symp        PF00939.14 Pp1s270_12V2_1       -            6.7e-09   35.1  15.3   1.1e-08   34.4  15.3   1.3   1   0   0   1   1   1   1 Sodium:sulfate symporter transmembrane region
+DctM                 PF06808.7  Pp1s270_12V2_1       -             0.0041   15.7  14.7    0.0052   15.3  14.7   1.1   1   0   0   1   1   1   1 DctM-like transporters
+NB-ARC               PF00931.17 Pp1s7_298V2_1        -            1.8e-15   56.5   0.0   1.8e-14   53.2   0.0   2.0   2   0   0   2   2   2   1 NB-ARC domain
+TIR                  PF01582.15 Pp1s7_298V2_1        -            6.6e-13   48.3   0.3   3.3e-12   46.0   0.2   2.1   2   0   0   2   2   2   1 TIR domain
+TIR_2                PF13676.1  Pp1s7_298V2_1        -            7.3e-12   45.3   0.0   2.6e-11   43.5   0.0   2.0   1   0   0   1   1   1   1 TIR domain
+NACHT                PF05729.7  Pp1s7_298V2_1        -            0.00025   20.7   0.0   0.00054   19.6   0.0   1.5   1   0   0   1   1   1   1 NACHT domain
+AAA_22               PF13401.1  Pp1s7_298V2_1        -            0.00056   20.0   0.0    0.0022   18.1   0.0   2.0   2   0   0   2   2   2   1 AAA domain
+LRR_9                PF14580.1  Pp1s7_298V2_1        -             0.0026   17.3   0.6     0.057   12.9   1.1   2.7   2   1   0   2   2   2   1 Leucine-rich repeat
+LRR_4                PF12799.2  Pp1s7_298V2_1        -             0.0026   17.3  12.1      0.54    9.9   0.1   6.4   4   3   2   7   7   7   1 Leucine Rich repeats (2 copies)
+AAA                  PF00004.24 Pp1s7_298V2_1        -              0.047   13.9   0.0     0.093   12.9   0.0   1.5   1   0   0   1   1   1   0 ATPase family associated with various cellular activities (AAA)
+Myb_DNA-binding      PF00249.26 Pp1s68_248V2_1       -            8.6e-12   44.9   0.2   2.3e-11   43.5   0.0   1.9   2   0   0   2   2   2   1 Myb-like DNA-binding domain
+Myb_DNA-binding      PF00249.26 Pp1s73_109V2_1       -            0.00073   19.5   0.0    0.0018   18.3   0.0   1.7   1   0   0   1   1   1   1 Myb-like DNA-binding domain
+ADH_zinc_N_2         PF13602.1  Pp1s176_123V2_1      -              3e-14   54.0   0.0   6.3e-14   52.9   0.0   1.6   1   0   0   1   1   1   1 Zinc-binding dehydrogenase
+ADH_N                PF08240.7  Pp1s176_123V2_1      -            3.3e-08   33.2   0.0     2e-07   30.7   0.0   2.1   1   1   1   2   2   2   1 Alcohol dehydrogenase GroES-like domain
+ADH_zinc_N           PF00107.21 Pp1s176_123V2_1      -            1.5e-06   27.7   0.0   4.9e-06   26.1   0.0   2.0   1   1   1   2   2   2   1 Zinc-binding dehydrogenase
+Semialdhyde_dh       PF01118.19 Pp1s176_123V2_1      -               0.04   14.2   0.1      0.11   12.7   0.1   1.8   1   1   0   1   1   1   0 Semialdehyde dehydrogenase, NAD binding domain
+Peptidase_C47        PF05543.8  Pp1s367_28V2_1       -              0.038   13.4   0.0     0.057   12.8   0.0   1.2   1   0   0   1   1   1   0 Staphopain peptidase C47
+DUF3194              PF11419.3  Pp1s367_28V2_1       -               0.92    9.7   7.7       3.6    7.8   4.8   2.8   2   1   0   2   2   2   0 Protein of unknown function (DUF3194)
+PyrI                 PF01948.13 Pp1s367_28V2_1       -                2.8    8.0   6.9       1.8    8.6   0.3   2.8   2   2   1   3   3   3   0 Aspartate carbamoyltransferase regulatory chain, allosteric domain
+SRF-TF               PF00319.13 Pp1s163_73V2_1       -            8.3e-25   85.7   0.0   1.4e-24   85.0   0.0   1.4   1   0   0   1   1   1   1 SRF-type transcription factor (DNA-binding and dimerisation domain)
+Proteasome_A_N       PF10584.4  Pp1s163_73V2_1       -              0.071   12.4   0.0      0.16   11.3   0.0   1.6   1   0   0   1   1   1   0 Proteasome subunit A N-terminal signature
+K-box                PF01486.12 Pp1s163_73V2_1       -                1.5    8.6  15.2      0.92    9.3  11.9   2.3   1   1   0   1   1   1   0 K-box region
+Response_reg         PF00072.19 Pp1s1455_2V2_1       -            7.9e-22   77.3   0.0   2.2e-21   75.9   0.0   1.8   1   1   0   1   1   1   1 Response regulator receiver domain
+HTH_18               PF12833.2  Pp1s1455_2V2_1       -            5.3e-19   68.0   0.0   2.7e-18   65.8   0.0   2.2   2   0   0   2   2   2   1 Helix-turn-helix domain
+HTH_AraC             PF00165.18 Pp1s1455_2V2_1       -            2.1e-09   36.9   0.0   0.00036   20.2   0.0   2.6   2   0   0   2   2   2   2 Bacterial regulatory helix-turn-helix proteins, AraC family
+tRNA_lig_kinase      PF08303.6  Pp1s1455_2V2_1       -              0.048   13.5   0.1      0.42   10.4   0.1   2.1   2   0   0   2   2   2   0 tRNA ligase kinase domain
+Pkinase              PF00069.20 Pp1s199_5V2_1        -            2.2e-39  135.1   0.0   2.7e-39  134.8   0.0   1.1   1   0   0   1   1   1   1 Protein kinase domain
+Pkinase_Tyr          PF07714.12 Pp1s199_5V2_1        -            2.9e-38  131.4   0.0   3.8e-38  131.0   0.0   1.1   1   0   0   1   1   1   1 Protein tyrosine kinase
+RIO1                 PF01163.17 Pp1s199_5V2_1        -             0.0024   17.2   0.0    0.0045   16.3   0.0   1.4   1   0   0   1   1   1   1 RIO1 family
+APH                  PF01636.18 Pp1s199_5V2_1        -               0.03   14.0   0.0     0.095   12.4   0.0   1.7   1   1   1   2   2   2   0 Phosphotransferase enzyme family
+Ion_trans            PF00520.26 Pp1s258_30V2_1       -              9e-34  116.4  46.6   6.7e-27   94.0  20.7   2.7   3   1   0   3   3   3   2 Ion transport protein
+EF-hand_7            PF13499.1  Pp1s258_30V2_1       -            1.7e-07   31.2   0.5   3.8e-07   30.1   0.5   1.5   1   0   0   1   1   1   1 EF-hand domain pair
+EF-hand_6            PF13405.1  Pp1s258_30V2_1       -            1.2e-06   27.8   1.8     0.051   13.4   0.2   2.6   2   0   0   2   2   2   2 EF-hand domain
+EF-hand_1            PF00036.27 Pp1s258_30V2_1       -             0.0027   16.8   1.4      0.41   10.0   0.3   2.6   2   0   0   2   2   2   2 EF hand
+EF-hand_8            PF13833.1  Pp1s258_30V2_1       -               0.12   11.9   0.1       1.7    8.3   0.0   2.4   2   0   0   2   2   2   0 EF-hand domain pair
+Pkinase              PF00069.20 Pp1s12_227V2_1       -            8.5e-14   51.3   2.8   8.9e-14   51.2   2.8   1.0   1   0   0   1   1   1   1 Protein kinase domain
+Pkinase_Tyr          PF07714.12 Pp1s12_227V2_1       -            1.8e-08   33.7   1.0     2e-08   33.6   1.0   1.0   1   0   0   1   1   1   1 Protein tyrosine kinase
+Glyco_hydro_88       PF07470.8  Pp1s210_72V2_1       -            3.8e-93  312.1   0.6   4.8e-93  311.8   0.6   1.0   1   0   0   1   1   1   1 Glycosyl Hydrolase Family 88
+Glyco_hydro_76       PF03663.9  Pp1s210_72V2_1       -            0.00067   19.1   1.2     0.036   13.4   0.1   2.9   2   1   0   2   2   2   2 Glycosyl hydrolase family 76
+Pkinase              PF00069.20 Pp1s315_62V2_1       -            5.1e-46  156.9   0.0   6.3e-46  156.6   0.0   1.1   1   0   0   1   1   1   1 Protein kinase domain
+Pkinase_Tyr          PF07714.12 Pp1s315_62V2_1       -            3.9e-41  140.8   0.0   4.9e-41  140.5   0.0   1.1   1   0   0   1   1   1   1 Protein tyrosine kinase
+Kinase-like          PF14531.1  Pp1s315_62V2_1       -             0.0064   15.4   0.0    0.0094   14.9   0.0   1.2   1   0   0   1   1   1   1 Kinase-like
+DPBB_1               PF03330.13 Pp1s266_66V2_1       -            4.3e-25   87.5   0.1   9.8e-25   86.3   0.1   1.6   1   0   0   1   1   1   1 Rare lipoprotein A (RlpA)-like double-psi beta-barrel
+Pollen_allerg_1      PF01357.16 Pp1s266_66V2_1       -            1.3e-18   66.5   0.1   2.3e-18   65.7   0.1   1.4   1   0   0   1   1   1   1 Pollen allergen
+Peptidase_A24        PF01478.13 Pp1s266_66V2_1       -              0.046   13.8   0.0     0.082   13.0   0.0   1.4   1   1   0   1   1   1   0 Type IV leader peptidase family
+Porin_3              PF01459.17 Pp1s266_66V2_1       -               0.17   11.1   2.1       2.8    7.1   2.4   2.0   2   0   0   2   2   2   0 Eukaryotic porin
+SRF-TF               PF00319.13 Pp1s55_304V2_1       -            7.5e-26   89.1   0.2   1.3e-25   88.3   0.2   1.4   1   0   0   1   1   1   1 SRF-type transcription factor (DNA-binding and dimerisation domain)
+K-box                PF01486.12 Pp1s55_304V2_1       -            6.2e-21   74.0   6.0     1e-20   73.3   6.0   1.3   1   0   0   1   1   1   1 K-box region
+PLAT                 PF01477.18 Pp1s505_24V2_1       -            1.7e-06   28.3   0.0   2.8e-06   27.6   0.0   1.4   1   0   0   1   1   1   1 PLAT/LH2 domain
+ADH_zinc_N_2         PF13602.1  Pp1s1_106V2_1        -            6.7e-23   81.9   0.0   1.2e-22   81.1   0.0   1.5   1   0   0   1   1   1   1 Zinc-binding dehydrogenase
+ADH_N                PF08240.7  Pp1s1_106V2_1        -            7.4e-10   38.5   0.0     1e-08   34.8   0.0   2.4   1   1   1   2   2   2   1 Alcohol dehydrogenase GroES-like domain
+ADH_zinc_N           PF00107.21 Pp1s1_106V2_1        -            1.9e-07   30.7   0.0   6.3e-07   28.9   0.0   1.8   1   1   0   2   2   2   1 Zinc-binding dehydrogenase
+NB-ARC               PF00931.17 Pp1s1_327V2_1        -            2.5e-38  131.5   0.0   2.8e-38  131.4   0.0   1.0   1   0   0   1   1   1   1 NB-ARC domain
+AAA_22               PF13401.1  Pp1s1_327V2_1        -            4.8e-05   23.5   0.0   0.00085   19.4   0.0   2.0   2   0   0   2   2   2   1 AAA domain
+NB-ARC               PF00931.17 Pp1s1_336V2_1        -            5.7e-36  123.8   0.0   6.2e-36  123.7   0.0   1.0   1   0   0   1   1   1   1 NB-ARC domain
+AAA_22               PF13401.1  Pp1s1_336V2_1        -            0.00029   20.9   0.0    0.0029   17.7   0.0   2.0   2   0   0   2   2   2   1 AAA domain
+DEAD                 PF00270.24 Pp1s1_336V2_1        -               0.18   11.3   0.2      0.57    9.6   0.2   1.7   1   1   0   1   1   1   0 DEAD/DEAH box helicase
+Myb_DNA-binding      PF00249.26 Pp1s36_43V2_1        -            3.9e-48  161.2  12.0   2.3e-16   59.5   0.7   3.4   3   0   0   3   3   3   3 Myb-like DNA-binding domain
+Myb_DNA-bind_6       PF13921.1  Pp1s36_43V2_1        -            2.8e-40  136.2  12.8   8.5e-17   61.0   1.4   3.4   1   1   2   3   3   3   3 Myb-like DNA-binding domain
+Rap1_C               PF11626.3  Pp1s36_43V2_1        -              3e-05   23.8   3.6     0.037   13.9   0.9   3.4   1   1   0   2   2   2   1 TRF2-interacting telomeric protein/Rap1 - C terminal domain
+Glyco_transf_34      PF05637.7  Pp1s71_269V2_1       -            1.5e-58  198.1   0.3   3.8e-58  196.8   0.3   1.6   1   1   0   1   1   1   1 galactosyl transferase GMA12/MNN10 family
+DUF273               PF03314.9  Pp1s71_269V2_1       -             0.0054   16.0   0.1    0.0094   15.2   0.1   1.3   1   0   0   1   1   1   1 Protein of unknown function, DUF273
+Glyco_hydro_17       PF00332.13 Pp1s85_128V2_1       -            5.1e-83  278.6   3.0   6.2e-83  278.3   3.0   1.1   1   0   0   1   1   1   1 Glycosyl hydrolases family 17
+X8                   PF07983.8  Pp1s85_128V2_1       -            3.3e-14   53.1   0.3   5.9e-14   52.3   0.3   1.4   1   0   0   1   1   1   1 X8 domain
+CCT                  PF06203.9  Pp1s109_41V2_1       -            2.6e-21   74.9  12.2     3e-21   74.7  12.2   1.1   1   0   0   1   1   1   1 CCT motif
+Ion_trans            PF00520.26 Pp1s45_277V2_1       -            1.3e-31  109.3  54.3   2.1e-22   79.3  24.2   2.3   2   0   0   2   2   2   2 Ion transport protein
+EF-hand_7            PF13499.1  Pp1s45_277V2_1       -            0.00011   22.2   1.1   0.00049   20.1   1.0   2.2   1   1   1   2   2   2   2 EF-hand domain pair
+EF-hand_6            PF13405.1  Pp1s45_277V2_1       -            0.00013   21.5   2.6      0.49   10.4   0.1   2.8   2   0   0   2   2   2   2 EF-hand domain
+Rer1                 PF03248.8  Pp1s45_277V2_1       -                  3    7.3  11.6      0.05   13.1   0.5   2.8   3   0   0   3   3   3   0 Rer1 family
+E2F_TDP              PF02319.15 Pp1s38_356V2_1       -            4.5e-25   87.0   0.2   7.1e-25   86.3   0.2   1.3   1   0   0   1   1   1   1 E2F/DP family winged-helix DNA-binding domain
+TrmB                 PF01978.14 Pp1s38_356V2_1       -              0.058   13.0   0.0      0.12   12.0   0.0   1.5   1   0   0   1   1   1   0 Sugar-specific transcriptional regulator TrmB
+Glyco_hydro_88       PF07470.8  Pp1s23_318V2_1       -            3.5e-90  302.4   0.1   4.2e-90  302.1   0.1   1.0   1   0   0   1   1   1   1 Glycosyl Hydrolase Family 88
+Pec_lyase_C          PF00544.14 Pp1s9_110V2_1        -            3.2e-38  131.2   2.7   7.7e-38  129.9   2.7   1.6   1   1   0   1   1   1   1 Pectate lyase
+#
+# Program:         hmmscan
+# Version:         3.1b1 (May 2013)
+# Pipeline mode:   SCAN
+# Query file:      ppatens_hgt_genes_pep.faa
+# Target file:     /db/pfam/latest/Pfam-A.hmm
+# Option settings: /usr/local/hmmer/latest/bin/hmmscan -o ppatens_hgt_genes_pep_Pfam-A.out --tblout ppatens_hgt_genes_pep_Pfam-A.tblout --domtblout ppatens_hgt_genes_pep_Pfam-A.domtblout --acc --noali --cpu 4 /db/pfam/latest/Pfam-A.hmm ppatens_hgt_genes_pep.faa 
+# Current dir:     /escratch4/statonse/statonse_Nov_19/hmm2go_bench
+# Date:            Sun Jan 25 21:50:42 2015
+# [ok]

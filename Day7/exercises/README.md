@@ -11,7 +11,12 @@ http://www.uniprot.org/blast/.
 
 After analyzing the BLAST results, can you determine the source species your samples?
 
+source was physcomitrella - because 100% identity
+
 2. What were the evidence codes for the sequences you analyzed?
+
+> complete go annotation > evidence column > says “IEA” meaning inferred from electronic annotation
+
 3. Were they manually curated or computationally predicted?
 4. Are there GO terms and publication records for these sequences? Take note of this information, we'll compare the results of different annotation methods to the Uniprot annotations.
 5. Did you notice anything odd about the types of BLAST hits?
