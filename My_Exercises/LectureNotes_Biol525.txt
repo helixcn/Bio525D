@@ -493,3 +493,41 @@ Genome scans and signatures of demography and adaptation
 		- problem is we don't know for sure if something is neutral
 		- another problem is false positives
 		
+		
+		
+1/28/15
+
+Functional annotation
+
+	annotation is for gene models
+		based on ab initio predictions
+			transcriptome info
+			legacy annotations...
+		
+	first step - BLAST search for homology
+		what is the evidence for the match?
+			source for the match?
+		how was the annotation determined?
+		how to get phylogenomic info?
+	
+	evidence-based annotation
+		combined evidence from multiple curated datasets
+	common approaches:
+		sequence-based - search uniprot with a set of proteins
+		model-based - search pFam
+		
+		why GO? (gene ontology)
+			because the same concept has many diff. names, e.g. eggplant, aubergine, brinjal.... makes it difficult to compare terms across species
+				GO uses a controlled vocabulary
+			need a structured way of storing and querying information as amounts of data grow
+			
+		GO is a way to visualize relationships between biological products, and a way to calculate those relationships too
+		
+		all hierarchical and trace back to 3 terms:
+			molecular function
+			biological process
+			cellular component
+			
+		
+		
+		

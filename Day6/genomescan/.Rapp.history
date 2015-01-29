@@ -1,0 +1,123 @@
+sub_split2 <- strsplit (sapply (sub_split,"[[",2),split = "_")
+sub_pos <- sapply (sub_split2,"[[",1)
+par (new = TRUE)
+plot (sub1[,2],sub1[,3], type = "l", xlab = "position", ylab = "expected heterozygosity", xlim = xlims)
+plot (sub1[,2],sub1[,3], type = "l", xlab = "position", ylab = "expected heterozygosity", xlim = xlims)
+par (new = TRUE)
+plot (sub_pos,the_depths, type = "l", col = "red",xlim = xlims, xaxt = "n", yaxt = "n", xlab = "", ylab = "")
+axis (4)
+hist (ind_seqcap_good[ind_seqcap_good > 10], breaks=50, xlab="Number of individuals with that many good genotype calls", ylab="# SNPs")
+plot (sub1[,2],sub1[,3], type = "l", xlab = "position", ylab = "expected heterozygosity", xlim = xlims)#
+#
+#extract the same contig from DPseqcap:#
+indgrep <- grep ("tscaffold953_243504_255332", rownames (DPseqcap))#
+sub_depth <- DPseqcap[indgrep,]#
+the_depths <- rowMeans (sub_depth,na.rm = T)#
+#
+#extract the position of each SNP from the name#
+sub_split <- strsplit (rownames (sub_depth),split = ":")#
+sub_split2 <- strsplit (sapply (sub_split,"[[",2),split = "_")#
+sub_pos <- sapply (sub_split2,"[[",1)#
+#
+#add depth to the plot:#
+par (new = TRUE)#
+plot (sub_pos,the_depths, type = "l", col = "red",xlim = xlims, xaxt = "n", yaxt = "n", xlab = "", ylab = "")#
+axis (4)
+#observed heterozygosity per individual (heterozygotes have a genotype of "1":#
+obs_het <- apply (GTseqcap_good,2,function(x){length(which (x == 1)) / length (is.na (x) == F)})#
+#
+sub_names <- strsplit (colnames (GTseqcap_good), split = "A")#
+pop_names <- sapply (sub_names,"[[",1)#
+#
+res_het <- cbind (pop_names, obs_het)#
+#
+geog <- read.table ("geographic_data.txt", T)#
+#
+res_combined <- as.matrix (merge (res_het, geog, by.x = "pop_names",by.y = "Population"))#
+#
+#########
+#read in the XTX results#
+xtx <- read.table ("xtx_values.txt",T, comment.char = "&")#
+#
+hist (log10(xtx$XTX_rank))
+summary (xtx$XTX_rank)
+hist (table (as.character (xtx$gcontig)))
+q1 <- quantile (xtx$XTX_rank, 0.99)#
+#
+#subset the outliers#
+outliers <- xtx[xtx$XTX_rank > q1,]#
+hist (table (as.character (outliers$gcontig)))
+#a simple non-parametric test of the number of outliers per contig with outliers, if the same number of SNPs were drawn at random from the genome to be outliers#
+results <- array (NA, 1000)#
+res_tab <- NULL#
+#
+for (i in 1:1000){#
+	samp1 <- as.character (sample (xtx[,1],size = nrow (outliers), replace = F))		#
+	results[i] <- mean (table (samp1))	#
+	tab1 <- as.data.frame (table (table (samp1)))#
+	res_tab <- rbind (res_tab, tab1)#
+}#
+#
+#the mean of the null distribution#
+mean (results)
+plot (sub1[,2],sub1[,3], type = "l", xlab = "position", ylab = "expected heterozygosity", xlim = xlims)#
+#
+#extract the same contig from DPseqcap:#
+indgrep <- grep ("tscaffold953_243504_255332", rownames (DPseqcap))#
+sub_depth <- DPseqcap[indgrep,]#
+the_depths <- rowMeans (sub_depth,na.rm = T)#
+#
+#extract the position of each SNP from the name#
+sub_split <- strsplit (rownames (sub_depth),split = ":")#
+sub_split2 <- strsplit (sapply (sub_split,"[[",2),split = "_")#
+sub_pos <- sapply (sub_split2,"[[",1)#
+#
+#add depth to the plot:#
+par (new = TRUE)#
+plot (sub_pos,the_depths, type = "l", col = "red",xlim = xlims, xaxt = "n", yaxt = "n", xlab = "", ylab = "")#
+axis (4)
+obs_het
+geog
+res_combined <- as.matrix (merge (res_het, geog, by.x = "pop_names",by.y = "Population"))
+res_combined
+head(res_combined)
+cor(res_combined$obs_het, res_combined$LAT)
+cor.test(res_combined$obs_het, res_combined$LAT)
+exp_het
+class(exp_het)
+class(pi)
+cor.test(res_combined$obs_het, res_combined$LAT)
+class(res_combined$obs_het)
+class(res_combined)
+str(res_combined)
+res_combined
+head(res_combined)
+res_combined$LAT
+class(res_combined)
+str(res_combined)
+res_combined[,1]
+cor.test(res_combined[,2], res_combined[,3])
+class(res_combined[,2])
+as.numeric(res_combined[,2])
+cor.test(as.numeric(res_combined[,2]), as.numeric(res_combined[,3]))
+cor.test(as.numeric(res_combined[,2]), as.numeric(res_combined[,4]))
+cor.test(as.numeric(res_combined[,2]), as.numeric(res_combined[,5]))
+res_combined[,1]
+cor.test(as.numeric(res_combined[,2]), as.numeric(res_combined[,3]))
+cor.test(as.numeric(res_combined[,2]), as.numeric(res_combined[,4]))
+cor.test(as.numeric(res_combined[,2]), as.numeric(res_combined[,5]))
+xtx <- read.table ("xtx_values.txt",T, comment.char = "&")#
+#
+hist (log10(xtx$XTX_rank))#
+summary (xtx$XTX_rank)
+hist (table (as.character (xtx$gcontig)))
+outliers <- xtx[xtx$XTX_rank > q1,]#
+hist (table (as.character (outliers$gcontig)))
+#the mean of the null distribution#
+mean (results)#
+#calculate the average number of outliers per contig with outliers#
+mean (table (as.character (outliers$gcontig)))#
+sub1 <- xtx[xtx[,1] == "C31224742_1_1547",]#
+plot (sub1[,2],sub1[,3], type = "l", xlab = "position", ylab = "XTX")#
+arrows (-1000,mean(xtx[,3]),1000000,mean(xtx[,3]),col = "red")#
+arrows (-1000,q1,1000000,q1,col = "purple")
