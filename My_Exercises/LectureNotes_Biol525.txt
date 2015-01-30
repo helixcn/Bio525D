@@ -528,6 +528,51 @@ Functional annotation
 			biological process
 			cellular component
 			
+			
+			
+1/29/15
+
+Phylogenetic inference
+	
+	why phylogenetics? - relationships and history of organisms to understand the diversity of life
+	
+	4 basic steps of phylogenetic analysis
+		1- data acquisition
+		2- construction of character matrix (e.g. sequence alignment)
+		3- phylogeny estimation
+		4- interpretation of phylogenetic inference
+	
+	constructing a distance matrix
+		pairwise alignment - based on similarity or distance
+		edit distance - commonly Hamming or Levenshtein distance between 2 strings (of equal length, e.g. number of changes needed to go from cow to cat, Levenshtein one doesn't need to have same length)
+	
+	what about biological alphabets? are all changes equally likely?
+		use a markov model of molecular evolution to see if all changes are equally possible
 		
+		Jukes-Cantor model described simplest Markov model for nucleotide substitutions
+			implied equal prob. for any substitution WHICH IS NOT TRUE
+				a > C or A > G are not equally likely, for example
+				
+			Kimura (1980) modified this to account for unequal probabilities
+			Felsenstein added more in 1981 - accounting for variation in nucleotide frequencies  (F81 model)
+			Hasegawa, Kishino, and Yano 1985 put more into it
+			and General time reversible (GTR) models - Tavaré 1986 allow for nucleotide differences and substitution variation
+		
+		modeltest (Posada and Crandall 1998) likelihood test to fit best model to data
+	
+	4 primary types of phylogenetic inference
+		1 distance-based: minimize distance between clusters
+		2 parsimony: minimum number of changes/mutations
+		3 max likelihood: maximizes likelihood of obtaining data under a model of evolution
+		4 Bayesian methods: compute posterior distribution of trees based on the data, model of evolution, and assumed prior distribution of trees
+		
+		support obtained from posterior distribution or ....
+	
+	 
+		
+		
+			
+		
+	
 		
 		
