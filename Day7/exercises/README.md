@@ -11,12 +11,16 @@ http://www.uniprot.org/blast/.
 
 After analyzing the BLAST results, can you determine the source species your samples?
 
+<<<<<<< HEAD
 source was physcomitrella - because 100% identity
 
 2. What were the evidence codes for the sequences you analyzed?
 
 > complete go annotation > evidence column > says “IEA” meaning inferred from electronic annotation
 
+=======
+2. What were the evidence codes for the sequences you analyzed?
+>>>>>>> 1c92a76ede22e3f5cb8b55637f75bb94a74d19ed
 3. Were they manually curated or computationally predicted?
 4. Are there GO terms and publication records for these sequences? Take note of this information, we'll compare the results of different annotation methods to the Uniprot annotations.
 5. Did you notice anything odd about the types of BLAST hits?
@@ -40,7 +44,11 @@ Did you see any differences between the results for step 2 and 4 above?
 
 ##Mapping Pfam domains to GO terms
 
+<<<<<<< HEAD
 For this section we will use HMMER2GO.
+=======
+For this section we will use [HMMER2GO](https://github.com/sestaton/HMMER2GO).
+>>>>>>> 1c92a76ede22e3f5cb8b55637f75bb94a74d19ed
 
 Normally we would start with assemblies, or gene models. In that case, we would want to first find ORFs, translate those ORFs and assign protein matches to our sequences. This can be done with two commands using HMMER2GO, for example,
 
