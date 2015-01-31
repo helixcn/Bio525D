@@ -568,7 +568,21 @@ Phylogenetic inference
 		
 		support obtained from posterior distribution or ....
 	
-	 
+
+
+1/30/15
+
+Phylogenomics
+
+	using genome-scale data to infer phylogenetic relationships
+	genome-scale comparisons placed in a phylogenetic context
+	
+	nearby comparisons (in terms of branch and branch lengths) allow questions like genes responsible for specific traits to be answered
+	more distant comparisons aid in characterization of rare events
+	comparisons across all lineages with an outgroup allow inference concerning the last common ancestor of all extant taxa within a group (e.g. gene content or ancestral TE)
+	
+	
+	
 		
 		
 			
